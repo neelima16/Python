@@ -1,0 +1,19 @@
+x=[]
+y=[]
+if __name__ == '__main__':
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        x.append(name)
+        y.append(score)
+#print(x,y)
+z=sorted(set(y))
+#print(z)
+t=z[1]
+result=[]
+for k in range(len(y)):
+    if y[k]==t:
+        result.append(x[k])
+result.sort()
+for name in result:
+    print(name)
